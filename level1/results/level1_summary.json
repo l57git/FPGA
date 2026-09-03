@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "sample_count": 10000,
+  "normalization": "uint8 / 255.0",
+  "fixed_point": {
+    "data_t": "ap_fixed<16, 6, AP_RND, AP_SAT>",
+    "acc_t": "ap_fixed<32, 14, AP_RND, AP_SAT>"
+  },
+  "hls_tool_version": "Vitis HLS 2025.2.1",
+  "toolchain_status": "开发验证；当前环境未提供 Vivado HLS 2019.2",
+  "mnist": {
+    "sample_count": 10000,
+    "image_shape": [
+      10000,
+      28,
+      28
+    ],
+    "label_min": 0,
+    "label_max": 9,
+    "image_min": 0,
+    "image_max": 255,
+    "normalization": "uint8 / 255.0",
+    "images_path": "data/mnist/t10k-images-idx3-ubyte",
+    "labels_path": "data/mnist/t10k-labels-idx1-ubyte",
+    "images_sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+    "labels_sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2"
+  },
+  "parameters": {
+    "source_path": "data/lenet_accuracy_1.bin",
+    "source_sha256": "72982df94c34bc968ff37f8b4c68d0df9e4434545c00d7128600dd8c6931c340",
+    "count": 44426
+  },
+  "float_summary": {
+    "result_path": "results/float_results.csv",
+    "result_sha256": "f3b0ffd8df392a841c0a5bff1936255e9545e936922d8f4e84a14e49db66f391",
+    "source_blob": "data/lenet_accuracy_10000.bin",
+    "source_blob_sha256": "398a7b39c9b7cc44cb529c7b35c884505c1ab220caa8b719495f37803406cf72",
+    "sample_count": 10000,
+    "correct": 9837,
+    "accuracy_percent": 98.37,
+    "model": "NumPy float32 LeNet",
+    "normalization": "uint8 / 255.0",
+    "parameter_count": 44426
+  },
+  "results": {
+    "status": "PASS",
+    "sample_count": 10000,
+    "float_correct": 9837,
+    "float_accuracy_percent": 98.37,
+    "hls_correct": 9838,
+    "hls_accuracy_percent": 98.38,
+    "absolute_accuracy_difference_percent": 0.009999999999990905,
+    "prediction_matches": 9999,
+    "prediction_consistency_percent": 99.99,
+    "mismatch_count": 1,
+    "hls_threshold_percent": 90.0,
+    "hls_threshold_passed": true,
+    "float_results": "results/float_results.csv",
+    "hls_results": "results/hls_results.csv",
+    "mismatches": "results/mismatches.csv"
+  },
+  "commands": [
+    "python3 tools/lenet_validation.py make-blob --parameters data/lenet_accuracy_1.bin --images data/mnist/t10k-images-idx3-ubyte --labels data/mnist/t10k-labels-idx1-ubyte --output data/lenet_accuracy_10000.bin",
+    "python3 tools/lenet_validation.py run-float --blob data/lenet_accuracy_10000.bin --results results/float_results.csv --summary results/float_summary.json --expected-count 10000",
+    "LENET_SKIP_SYNTH=1 LENET_ACCURACY_BLOB=\"$PWD/data/lenet_accuracy_10000.bin\" LENET_RESULT_CSV=\"$PWD/results/hls_results.csv\" vivado_hls -f run_hls.tcl",
+    "python3 tools/lenet_validation.py compare --float-results results/float_results.csv --hls-results results/hls_results.csv --report results/validation_report.json --mismatches results/mismatches.csv --threshold 90"
+  ]
+}

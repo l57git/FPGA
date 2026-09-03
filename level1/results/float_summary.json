@@ -1,0 +1,12 @@
+{
+  "result_path": "results/float_results.csv",
+  "result_sha256": "f3b0ffd8df392a841c0a5bff1936255e9545e936922d8f4e84a14e49db66f391",
+  "source_blob": "data/lenet_accuracy_10000.bin",
+  "source_blob_sha256": "398a7b39c9b7cc44cb529c7b35c884505c1ab220caa8b719495f37803406cf72",
+  "sample_count": 10000,
+  "correct": 9837,
+  "accuracy_percent": 98.37,
+  "model": "NumPy float32 LeNet",
+  "normalization": "uint8 / 255.0",
+  "parameter_count": 44426
+}

@@ -1,0 +1,14 @@
+{
+  "output_path": "data/lenet_accuracy_10000.bin",
+  "output_sha256": "398a7b39c9b7cc44cb529c7b35c884505c1ab220caa8b719495f37803406cf72",
+  "sample_count": 10000,
+  "parameter_count": 44426,
+  "parameter_source": "data/lenet_accuracy_1.bin",
+  "parameter_source_sha256": "72982df94c34bc968ff37f8b4c68d0df9e4434545c00d7128600dd8c6931c340",
+  "images_path": "data/mnist/t10k-images-idx3-ubyte",
+  "images_sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+  "labels_path": "data/mnist/t10k-labels-idx1-ubyte",
+  "labels_sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2",
+  "normalization": "uint8 / 255.0",
+  "protocol_magic": -20260902
+}

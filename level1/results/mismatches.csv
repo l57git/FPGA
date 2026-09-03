@@ -1,0 +1,2 @@
+index,expected,float_prediction,hls_prediction,float_correct,hls_correct
+6166,9,3,9,0,1

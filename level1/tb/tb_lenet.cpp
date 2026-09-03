@@ -2,6 +2,7 @@
 
 #include <cstdint>
 #include <fstream>
+#include <iomanip>
 #include <iostream>
 
 using namespace lenet_cfg;
@@ -25,6 +26,11 @@ void zero_array(data_t (&dst)[N]) {
 }
 
 int main(int argc, char **argv) {
+    if (argc > 3) {
+        std::cerr << "Usage: tb_lenet [accuracy_blob [result_csv]]\n";
+        return 2;
+    }
+
     static data_t image[IMG_PIXELS] = {};
     static data_t conv1_w[CONV1_W_COUNT] = {};
     static data_t conv1_b[C1_OUT] = {};
@@ -38,7 +44,7 @@ int main(int argc, char **argv) {
     static data_t fc3_b[CLASSES] = {};
     static data_t logits[CLASSES] = {};
 
-    if (argc == 2) {
+    if (argc >= 2) {
         std::ifstream in(argv[1], std::ios::binary);
         if (!in) {
             std::cerr << "Cannot open " << argv[1] << '\n';
@@ -63,6 +69,20 @@ int main(int argc, char **argv) {
         if (!ok) {
             std::cerr << "Bad or truncated LeNet accuracy blob header\n";
             return 2;
+        }
+
+        std::ofstream result_file;
+        if (argc == 3) {
+            result_file.open(argv[2]);
+            if (!result_file) {
+                std::cerr << "Cannot open result CSV " << argv[2] << '\n';
+                return 2;
+            }
+            result_file << "index,expected,prediction";
+            for (int i = 0; i < CLASSES; ++i) {
+                result_file << ",logit_" << i;
+            }
+            result_file << '\n';
         }
 
         int correct = 0;
@@ -99,6 +119,16 @@ int main(int argc, char **argv) {
                     std::cout << ' ' << logits[i].to_double();
                 }
                 std::cout << '\n';
+            }
+
+            if (result_file) {
+                result_file << sample << ',' << expected << ','
+                            << prediction.to_uint();
+                result_file << std::setprecision(9);
+                for (int i = 0; i < CLASSES; ++i) {
+                    result_file << ',' << logits[i].to_double();
+                }
+                result_file << '\n';
             }
 
             if ((int)prediction == expected) {

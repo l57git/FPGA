@@ -5,6 +5,10 @@ if {[info exists ::env(LENET_ACCURACY_BLOB)]} {
 } else {
     set accuracy_blob [file join $project_root data lenet_accuracy.bin]
 }
+set result_csv ""
+if {[info exists ::env(LENET_RESULT_CSV)]} {
+    set result_csv [file normalize $::env(LENET_RESULT_CSV)]
+}
 set skip_synth 0
 if {[info exists ::env(LENET_SKIP_SYNTH)] && $::env(LENET_SKIP_SYNTH) eq "1"} {
     set skip_synth 1
@@ -30,7 +34,13 @@ create_clock -period 10 -name default
 if {$skip_csim} {
     puts "LENET_SKIP_CSIM=1; skipping csim_design."
 } elseif {[file exists $accuracy_blob]} {
-    csim_design -argv "$accuracy_blob"
+    puts "LENET_ACCURACY_BLOB=$accuracy_blob"
+    set csim_argv $accuracy_blob
+    if {$result_csv ne ""} {
+        append csim_argv " " $result_csv
+        puts "LENET_RESULT_CSV=$result_csv"
+    }
+    csim_design -argv $csim_argv
 } else {
     puts "data/lenet_accuracy.bin not found; running smoke test only."
     csim_design

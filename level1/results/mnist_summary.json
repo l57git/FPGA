@@ -1,0 +1,17 @@
+{
+  "sample_count": 10000,
+  "image_shape": [
+    10000,
+    28,
+    28
+  ],
+  "label_min": 0,
+  "label_max": 9,
+  "image_min": 0,
+  "image_max": 255,
+  "normalization": "uint8 / 255.0",
+  "images_path": "data/mnist/t10k-images-idx3-ubyte",
+  "labels_path": "data/mnist/t10k-labels-idx1-ubyte",
+  "images_sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+  "labels_sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2"
+}

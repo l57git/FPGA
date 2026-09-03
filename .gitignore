@@ -9,3 +9,20 @@ hls_work/
 *.d
 Thumbs.db
 
+# Python and native build caches
+__pycache__/
+*.py[cod]
+*.so
+*.a
+
+# Reproducible MNIST inputs and large experiment outputs
+level1/data/mnist/
+level1/data/lenet_accuracy_10000.bin
+level1/results/float_results.csv
+level1/results/hls_results.csv
+level1/results/*_logits.csv
+
+# Local Claude/OpenSpec and CodeGraph state
+.claude/
+openspec/
+.codegraph/
