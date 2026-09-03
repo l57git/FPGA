@@ -1,0 +1,11 @@
+# Vivado/Vitis HLS generated files
+hls_work/
+*.log
+*.jou
+*.str
+*.zip
+*.exe
+*.o
+*.d
+Thumbs.db
+
