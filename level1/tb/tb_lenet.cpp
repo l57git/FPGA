@@ -1,6 +1,7 @@
 #include "../src/lenet.hpp"
 
 #include <cstdint>
+#include <cstdlib>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -26,8 +27,8 @@ void zero_array(data_t (&dst)[N]) {
 }
 
 int main(int argc, char **argv) {
-    if (argc > 3) {
-        std::cerr << "Usage: tb_lenet [accuracy_blob [result_csv]]\n";
+    if (argc > 4) {
+        std::cerr << "Usage: tb_lenet [accuracy_blob [result_csv [minimum_accuracy]]]\n";
         return 2;
     }
 
@@ -146,10 +147,11 @@ int main(int argc, char **argv) {
         }
 
         const double accuracy = 100.0 * correct / batch_count;
+        const double minimum_accuracy = argc == 4 ? std::atof(argv[3]) : 90.0;
         std::cout << "correct=" << correct << '/' << batch_count
                   << ", fixed_point_accuracy=" << accuracy << "%\n"
                   << "BATCH COMPLETE\n";
-        return accuracy >= 90.0 ? 0 : 1;
+        return accuracy >= minimum_accuracy ? 0 : 1;
     }
 
     zero_array(image);

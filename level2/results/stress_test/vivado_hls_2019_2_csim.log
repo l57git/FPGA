@@ -1,0 +1,49 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tb/tb_lenet.cpp in debug mode
+   Compiling ../../../../../src/lenet.cpp in debug mode
+   Generating csim.exe
+sample=0, expected=7, prediction=7
+logits: -2.56445 0.310547 1.33984 0.173828 -3.67383 -1.85156 -8.30566 6.30859 -1.23145 -0.142578
+sample=1, expected=2, prediction=2
+logits: -1.13477 -2.53027 1.4873 -2.35547 0.667969 0.555664 0.973633 -1.55957 0.0273438 -2.55469
+sample=2, expected=1, prediction=7
+logits: -0.750977 -0.600586 0.349609 -0.969727 0.625 -0.776367 -0.90625 0.841797 -1.18359 -0.264648
+misclassified sample=2, expected=1, prediction=7
+sample=3, expected=0, prediction=4
+logits: -2.58496 -2.88281 -0.234375 0.541992 0.821289 -0.958984 -4.1709 -1.06152 -2.71973 0.359375
+misclassified sample=3, expected=0, prediction=4
+sample=4, expected=4, prediction=4
+logits: -5.9082 -3.3291 -2.50293 -4.90723 8.6416 -3.4082 -5.35254 -1.90918 -1.26562 2.26465
+misclassified sample=6, expected=4, prediction=2
+misclassified sample=7, expected=9, prediction=3
+misclassified sample=9, expected=9, prediction=5
+misclassified sample=10, expected=0, prediction=3
+misclassified sample=11, expected=6, prediction=9
+misclassified sample=12, expected=9, prediction=5
+misclassified sample=13, expected=0, prediction=3
+misclassified sample=17, expected=7, prediction=3
+misclassified sample=19, expected=4, prediction=2
+misclassified sample=20, expected=9, prediction=2
+misclassified sample=25, expected=0, prediction=4
+misclassified sample=27, expected=4, prediction=2
+misclassified sample=31, expected=1, prediction=2
+misclassified sample=33, expected=4, prediction=5
+misclassified sample=34, expected=7, prediction=2
+misclassified sample=37, expected=1, prediction=7
+misclassified sample=40, expected=1, prediction=7
+misclassified sample=42, expected=4, prediction=9
+progress=100/1000
+progress=200/1000
+progress=300/1000
+progress=400/1000
+progress=500/1000
+progress=600/1000
+progress=700/1000
+progress=800/1000
+progress=900/1000
+progress=1000/1000
+correct=551/1000, fixed_point_accuracy=55.1%
+BATCH COMPLETE
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

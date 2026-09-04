@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "float_correct": 551,
+  "float_accuracy_percent": 55.1,
+  "hls_correct": 551,
+  "hls_accuracy_percent": 55.1,
+  "absolute_accuracy_difference_percent": 0.0,
+  "prediction_matches": 1000,
+  "prediction_consistency_percent": 100.0,
+  "mismatch_count": 0,
+  "hls_threshold_percent": 0.0,
+  "hls_threshold_passed": true,
+  "float_results": "results\\stress_test\\python_results.csv",
+  "hls_results": "results\\stress_test\\hls_results.csv",
+  "mismatches": "results\\stress_test\\python_hls_mismatches.csv"
+}

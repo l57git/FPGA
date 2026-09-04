@@ -76,3 +76,20 @@ python3 tools/lenet_validation.py compare \
 
 The complete IDX files, batch blob, and per-sample CSV files are reproducible inputs or outputs and are ignored by Git. The JSON summaries, mismatch CSV, and validation report can be retained as experiment evidence.
 
+## Windows and Vivado HLS 2019.2
+
+After placing the two unpacked MNIST test files in `data/mnist/`, run:
+
+```bat
+run_validation_windows.bat
+```
+
+The script validates the MNIST files, creates the 10,000-sample blob, runs the Python float32 reference, runs Vivado HLS 2019.2 C simulation, and compares all predictions. Results are written to `results/windows_2019_2/` so they do not overwrite evidence produced by another tool version.
+
+The default installation directory is `E:\use\cpu\Vivado\2019.2`. For a different installation, set it before running:
+
+```bat
+set VIVADO_HLS_ROOT=D:\Xilinx\Vivado\2019.2
+run_validation_windows.bat
+```
+

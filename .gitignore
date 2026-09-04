@@ -21,6 +21,10 @@ level1/data/lenet_accuracy_10000.bin
 level1/results/float_results.csv
 level1/results/hls_results.csv
 level1/results/*_logits.csv
+level1/results/windows_2019_2/
+
+# Level 2 self-collected inputs are kept local until reviewed for submission
+level2/data/self_collected/
 
 # Local Claude/OpenSpec and CodeGraph state
 .claude/

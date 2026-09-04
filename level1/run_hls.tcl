@@ -9,6 +9,10 @@ set result_csv ""
 if {[info exists ::env(LENET_RESULT_CSV)]} {
     set result_csv [file normalize $::env(LENET_RESULT_CSV)]
 }
+set accuracy_threshold ""
+if {[info exists ::env(LENET_ACCURACY_THRESHOLD)]} {
+    set accuracy_threshold $::env(LENET_ACCURACY_THRESHOLD)
+}
 set skip_synth 0
 if {[info exists ::env(LENET_SKIP_SYNTH)] && $::env(LENET_SKIP_SYNTH) eq "1"} {
     set skip_synth 1
@@ -39,6 +43,10 @@ if {$skip_csim} {
     if {$result_csv ne ""} {
         append csim_argv " " $result_csv
         puts "LENET_RESULT_CSV=$result_csv"
+    }
+    if {$accuracy_threshold ne ""} {
+        append csim_argv " " $accuracy_threshold
+        puts "LENET_ACCURACY_THRESHOLD=$accuracy_threshold"
     }
     csim_design -argv $csim_argv
 } else {

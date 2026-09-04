@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "experiment": "reproducible synthetic real-scene stress test; not self-collected data",
+  "sample_count": 1000,
+  "mnist_accuracy_percent": 98.2,
+  "raw_resize_accuracy_percent": 17.2,
+  "preprocessed_accuracy_percent": 55.1,
+  "preprocessing_gain_percent_points": 37.900000000000006,
+  "pipeline": [
+    "grayscale",
+    "background estimation and polarity normalization",
+    "ROI crop",
+    "aspect-preserving resize",
+    "center of mass alignment",
+    "28x28 normalization"
+  ],
+  "seed": 20260904
+}
