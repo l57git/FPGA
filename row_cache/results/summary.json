@@ -1,0 +1,22 @@
+[
+  {
+    "variant": "row_cache",
+    "width": 16,
+    "samples": 1000,
+    "tool": "Vivado HLS 2019.2",
+    "target_period_ns": 10,
+    "source_sha256": "2379b0a25944700a3885cb89345615bf85f141743c5815ddaf45a9d2edf4453f",
+    "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3",
+    "header_sha256": "dd63a0b2107394d76bc619d0be1e117721b6d02c94ecc0ecb58915f56c76d7e6",
+    "testbench_sha256": "e25bc8387ddb3df90dcdf9b6053bb5c15bd20898e05fa28f8c1d03dcd0aab5a5",
+    "LUT": "7169",
+    "FF": "4219",
+    "DSP": "3",
+    "BRAM": "14",
+    "cycles_min": "1657356",
+    "cycles_max": "3100026",
+    "estimated_clock_ns": "8.750",
+    "correct": 982,
+    "accuracy_percent": 98.2
+  }
+]

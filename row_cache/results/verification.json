@@ -1,0 +1,8 @@
+{
+  "samples": 1000,
+  "all_csv_fields_identical": true,
+  "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3",
+  "shared_row_core_instances": [
+    "grp_dense_row_fu_1213"
+  ]
+}

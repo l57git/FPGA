@@ -1,3 +1,6 @@
 # Preserve raw experiment evidence byte-for-byte for SHA-256 verification.
 resource_reuse/results/** -text
 resource_reuse/src/lenet_shared.cpp -text
+
+row_cache/results/** -text
+row_cache/src/lenet_row.cpp -text

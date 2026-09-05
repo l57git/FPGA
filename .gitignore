@@ -41,3 +41,6 @@ openspec/*
 openspec/changes/*
 !openspec/changes/add-numerical-precision-experiment/
 .codegraph/
+
+!row_cache/results/row_cache/run.log
+row_cache/results/*.bin

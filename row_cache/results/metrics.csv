@@ -1,0 +1,4 @@
+variant,samples,accuracy_percent,DSP,LUT,FF,BRAM,cycles_min,cycles_max,estimated_clock_ns
+baseline,1000,98.2,10,7834,4426,13,1859359,1859359,8.750
+shared,1000,98.2,3,7296,4278,46,1657335,3099675,8.750
+row_cache,1000,98.2,3,7169,4219,14,1657356,3100026,8.750
