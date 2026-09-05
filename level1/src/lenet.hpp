@@ -37,7 +37,15 @@ enum {
 };
 }
 
-typedef ap_fixed<16, 6, AP_RND, AP_SAT> data_t;
+#ifndef LENET_DATA_W
+#define LENET_DATA_W 16
+#endif
+
+#if LENET_DATA_W < 8 || LENET_DATA_W > 16
+#error "LENET_DATA_W must be in the range 8..16"
+#endif
+
+typedef ap_fixed<LENET_DATA_W, 6, AP_RND, AP_SAT> data_t;
 typedef ap_fixed<32, 14, AP_RND, AP_SAT> acc_t;
 
 void lenet_accel(
@@ -56,4 +64,3 @@ void lenet_accel(
     ap_uint<4> &prediction);
 
 #endif
-

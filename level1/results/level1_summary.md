@@ -54,3 +54,10 @@ python3 tools/lenet_validation.py compare --float-results results/float_results.
 - 浮点结果：`results/float_results.csv`
 - HLS 结果：`results/hls_results.csv`
 - 不一致列表：`results/mismatches.csv`
+
+## 定点位宽扩展
+
+在上述 16 位基线之上，已完成共享 `data_t` 的 W=8..16 位宽扫描，并在每一档执行
+HLS CSim 与综合。满足 HLS 准确率 ≥90%、相对 16 位损失 ≤0.5 个百分点的最小配置
+为 W10；完整结果表、CSV 和曲线图见
+[`numerical_precision/`](numerical_precision/README.md)。

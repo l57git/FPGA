@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "mode": "full",
+  "date": "2026-09-05",
+  "dataset": "official MNIST test split",
+  "sample_count": 10000,
+  "normalization": "uint8 / 255.0",
+  "data_type": "ap_fixed<W,6,AP_RND,AP_SAT>",
+  "accumulator_type": "ap_fixed<32,14,AP_RND,AP_SAT>",
+  "widths": "8..16",
+  "target_part": "xc7z020clg400-1",
+  "target_clock_ns": 10.0,
+  "hls_tool": "Vitis HLS 2025.2.1",
+  "float_accuracy_pct": 98.37,
+  "baseline_width": 16,
+  "baseline_hls_accuracy_pct": 98.38,
+  "accuracy_threshold_pct": 90.0,
+  "max_loss_vs_16_pp": 0.5,
+  "recommendation_width": 10,
+  "recommendation": {
+    "hls_accuracy_pct": 98.0,
+    "loss_vs_16_pp": 0.38,
+    "lut": 17770,
+    "ff": 13140,
+    "dsp": 13,
+    "bram_18k": 11,
+    "latency_cycles_max": 484541,
+    "latency_ns_target": 4845410.0,
+    "resource_change_vs_16_pct": {
+      "lut": 1.39,
+      "ff": -2.54,
+      "dsp": 0.0,
+      "bram_18k": 21.43
+    }
+  },
+  "blob_sha256": "398a7b39c9b7cc44cb529c7b35c884505c1ab220caa8b719495f37803406cf72",
+  "parameter_region_sha256": "d4041b04b172a8c19ecfed1c43e779f35af0f0c6fd6aacbbc70f1c0a3dd855bf",
+  "raw_run": "level1/results/numerical_precision_vitis_20260905_fast"
+}

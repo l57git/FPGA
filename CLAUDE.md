@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project scope
 
 - This repository contains the selected **Task 2 / LeNet** implementation. The course requirements are summarized in `docs/任务要求与LeNet路线核查.md`; the original task PDF is intentionally not tracked.
-- The current code is the Level 1 hardware-inference baseline for MNIST. It is intended for Vivado HLS C simulation and synthesis, not model training or software deployment.
+- The current code is the Level 1 hardware-inference baseline for MNIST. It is intended for Vivado HLS C simulation and synthesis, not model training or software deployment. A reproducible shared-`data_t` precision sweep covering 8..16 bits is also included; its curated evidence is under `level1/results/numerical_precision/`.
 - The expected toolchain is Vivado HLS 2019.2, targeting `xc7z020clg400-1` with a 10 ns clock. The current shell does not provide a `vivado_hls` executable, so HLS commands must be run from an installed Vivado HLS 2019.2 command environment.
 - The repository includes the one-sample regression blob, reproducible Python validation tools, and Level 1 implementation. Complete MNIST inputs and per-sample results are generated under Git-ignored paths; the tracked experiment summaries record the current validation evidence.
 
@@ -25,7 +25,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   -> logits and argmax prediction
 ```
 
-- All tensors and parameters use `data_t = ap_fixed<16, 6, AP_RND, AP_SAT>`; accumulators use `acc_t = ap_fixed<32, 14, AP_RND, AP_SAT>`.
+- By default, all tensors and parameters use `data_t = ap_fixed<16, 6, AP_RND, AP_SAT>`; the compile-time `LENET_DATA_W` setting permits the controlled 8..16-bit sweep. Accumulators remain `acc_t = ap_fixed<32, 14, AP_RND, AP_SAT>`.
 - Parameters are passed as flattened arrays. Conv1 weights are indexed `[output][ky][kx]`, Conv2 weights `[output][input][ky][kx]`, and fully connected weights `[output][input]`. The FC input is the flattened `[16][4][4]` second pooling result in channel-major order.
 - Intermediate feature maps are function-local static arrays. The HLS interface maps the image and logits to `gmem0`, all weights and biases to `gmem1`, and exposes all arguments through the `control` AXI-Lite bundle.
 - Softmax is intentionally absent because only the class argmax is required; changing this would add work without changing the prediction.
@@ -74,7 +74,7 @@ LENET_SKIP_CSIM=1 vivado_hls -f run_hls.tcl
 LENET_SKIP_SYNTH=1 vivado_hls -f run_hls.tcl
 ```
 
-The Tcl script accepts `LENET_SKIP_CSIM=1`, `LENET_SKIP_SYNTH=1`, and the optional `LENET_RESULT_CSV` output path. If `LENET_ACCURACY_BLOB` is unset, it looks for `data/lenet_accuracy.bin`; that file is not currently tracked, so the testbench falls back to the no-argument smoke test. There is no Makefile, CMake project, package manager, standalone lint command, or separate unit-test framework; Vivado HLS C simulation is the hardware validation command.
+The Tcl script accepts `LENET_DATA_W=8..16`, `LENET_HLS_WORKSPACE`, `LENET_SKIP_CSIM=1`, `LENET_SKIP_SYNTH=1`, `LENET_CSIM_OPT=1`, and the optional `LENET_RESULT_CSV` output path. If `LENET_ACCURACY_BLOB` is unset, it looks for `data/lenet_accuracy.bin`; that file is not currently tracked, so the testbench falls back to the no-argument smoke test. There is no Makefile, CMake project, package manager, standalone lint command, or separate unit-test framework; Vivado HLS C simulation is the hardware validation command.
 
 ## Complete MNIST and Python comparison
 
@@ -105,3 +105,9 @@ Generated HLS files belong under `level1/hls_work/` and are ignored by Git. To d
 ```sh
 rm -rf level1/hls_work
 ```
+
+The complete numerical-precision run used the official 10,000-sample MNIST test split
+with Vitis HLS 2025.2.1. It completed C simulation and synthesis for every width from
+8 through 16; the smallest configuration meeting the documented thresholds is
+`data_t = ap_fixed<10, 6, AP_RND, AP_SAT>`. The curated table and figures are in
+`level1/results/numerical_precision/`; the large per-sample outputs remain ignored.

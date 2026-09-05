@@ -73,7 +73,7 @@ int main(int argc, char **argv) {
         }
 
         std::ofstream result_file;
-        if (argc == 3) {
+        if (argc >= 3) {
             result_file.open(argv[2]);
             if (!result_file) {
                 std::cerr << "Cannot open result CSV " << argv[2] << '\n';

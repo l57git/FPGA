@@ -1,0 +1,3 @@
+schema: spec-driven
+created: 2026-09-05
+goal: 以最小实现完成 LeNet 8～16 位数值精度、资源和延迟对照实验。
