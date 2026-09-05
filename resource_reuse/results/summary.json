@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "baseline",
+    "width": 16,
+    "samples": 1000,
+    "tool": "Vivado HLS 2019.2",
+    "target_period_ns": 10,
+    "source_sha256": "f201e68c1320df08c4a309140dc29a98f5c6ecaab198e17589db8f462fcc7775",
+    "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3",
+    "LUT": "7834",
+    "FF": "4426",
+    "DSP": "10",
+    "BRAM": "13",
+    "cycles_min": "1859359",
+    "cycles_max": "1859359",
+    "estimated_clock_ns": "8.750",
+    "correct": 982,
+    "accuracy_percent": 98.2
+  },
+  {
+    "variant": "shared",
+    "width": 16,
+    "samples": 1000,
+    "tool": "Vivado HLS 2019.2",
+    "target_period_ns": 10,
+    "source_sha256": "d457939c323ccdc5531cd69d0910fad8d3195f11f12e1bd2c0b909b41f644936",
+    "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3",
+    "LUT": "7296",
+    "FF": "4278",
+    "DSP": "3",
+    "BRAM": "46",
+    "cycles_min": "1657335",
+    "cycles_max": "3099675",
+    "estimated_clock_ns": "8.750",
+    "correct": 982,
+    "accuracy_percent": 98.2
+  }
+]

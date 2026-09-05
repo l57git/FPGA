@@ -1,6 +1,9 @@
 # Vivado/Vitis HLS generated files
 hls_work/
 *.log
+!resource_reuse/results/baseline/run.log
+!resource_reuse/results/shared/run.log
+!resource_reuse/results/w10_interface_failure/run.log
 *.jou
 *.str
 *.zip
@@ -8,6 +11,8 @@ hls_work/
 *.o
 *.d
 Thumbs.db
+resource_reuse/results/mnist.bin
+resource_reuse/results/input.bin
 
 # Python and native build caches
 __pycache__/

@@ -1,0 +1,9 @@
+{
+  "module": "dense_shared",
+  "instance_count": 1,
+  "instances": [
+    "grp_dense_shared_fu_1219"
+  ],
+  "top_rtl": "shared/rtl/lenet_accel.v",
+  "core_report": "shared/dense_shared_csynth.rpt"
+}

@@ -1,0 +1,5 @@
+{
+  "samples": 1000,
+  "prediction_matches": 1000,
+  "all_logits_equal": true
+}
