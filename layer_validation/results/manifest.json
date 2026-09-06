@@ -1,0 +1,16 @@
+{
+  "layer_validation/results/experiment_report.md": "101b020575a93419985347c78734bec999e20085a63c3c2641c9f26338f76739",
+  "layer_validation/results/fault_localization.json": "33d11a64b9e4c5929f86971422b0961470019506b9a18d2e058308b2de494de3",
+  "layer_validation/results/golden_vs_existing_hls.csv": "f56f20e85a5be3d93a581f49a2001da38ea56cdc96b4f95a43a35378a462a538",
+  "layer_validation/results/input_metadata.json": "39c91c1d02b612295624c11a7ad1fd551f515a809716df0f9a6101a536e23849",
+  "layer_validation/results/layer_diagnostics.png": "03d23846bcb33500a39cf726a7ccba400348ffae71ab8909669b36cd66e8814a",
+  "layer_validation/results/layer_float_fixed_error.csv": "0aaf2b1d0a0a46ab77c7236de1247bf2e9b6284d431bc8626c998f10c11e94ce",
+  "layer_validation/results/offline_summary.json": "f6a8af7b687a7943ef364f8ce7013180d67a4ec930dc44f5a2e3e1c63b834861",
+  "layer_validation/results/python_fault_trace.csv.gz": "38b39953aeb6a76f6e6c4997166927fc1ad567c458558a657a340ad152dbec35",
+  "layer_validation/results/python_mixed_full10000.csv": "18fd2b2a8bf26c9ee41b238f6c41cc3db9b4c1361be4fad518373b8f6433ec92",
+  "layer_validation/results/python_mixed_full10000.json": "117c686d1b4497271ba7cc9ba0c419c2abd2b306ddbc07f4ee2e277f6be4cb41",
+  "layer_validation/results/python_reference_trace.csv.gz": "007247fb8025df0a4cbbc179f6416c5d6ec693d278cf57b052ae3ab5c700ea75",
+  "layer_validation/results/unit_tests.txt": "43db4729adb4d551b664392bb1facbbf69b4112db6f2a05d08a31994c6b0092f",
+  "layer_validation/src/lenet_trace.cpp": "85e5954d4987d48c80838474b45ee8c387fc21c67d93867cf789a114c78bc38a",
+  "layer_validation/results/hls_unavailable/run.log": "6244a9eaad77e2f3f83a8cf97623badd0c93b00fec0d70672b69fd0c45089a55"
+}

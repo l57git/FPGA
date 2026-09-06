@@ -1,0 +1,12 @@
+{
+  "method": "Python integer fixed-point reference; NOT a new HLS run",
+  "samples": 10000,
+  "correct": 9840,
+  "accuracy_percent": 98.4,
+  "weight_format": "ap_fixed<8,1,AP_RND,AP_SAT>",
+  "activation_format": "ap_fixed<16,6,AP_RND,AP_SAT>",
+  "existing_hls_checked_samples": 1000,
+  "existing_hls_all_logits_bit_exact": true,
+  "full_hls_status": "pending",
+  "full_input_sha256": "398a7b39c9b7cc44cb529c7b35c884505c1ab220caa8b719495f37803406cf72"
+}

@@ -1,0 +1,166 @@
+{
+  "source": "Python synthetic fault, NOT HLS fault-run",
+  "injection": "pool1[0][0][0] += 1.0 in every sample",
+  "diagnoses": [
+    {
+      "sample": 0,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 1,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 2,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 3,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 4,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 5,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 6,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 14,
+      "observed_raw": 1038,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 7,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 8,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 9,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 10,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 11,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 12,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 13,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 14,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 15,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 16,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 17,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 18,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    },
+    {
+      "sample": 19,
+      "layer": "pool1",
+      "flat_index": 0,
+      "expected_raw": 6,
+      "observed_raw": 1030,
+      "mismatch_elements": 1
+    }
+  ]
+}

@@ -51,3 +51,7 @@ row_cache/results/*.bin
 mixed_precision/results/**/*.bin
 rtl_validation/results/**/*.bin
 rtl_validation/results/*.bin
+
+layer_validation/results/*.bin
+layer_validation/results/**/trace.csv
+!layer_validation/results/**/run.log

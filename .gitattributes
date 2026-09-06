@@ -9,3 +9,6 @@ mixed_precision/results/** -text
 mixed_precision/src/** -text
 mixed_precision/tb/** -text
 rtl_validation/results/** -text
+
+layer_validation/results/** -text
+layer_validation/src/** -text
