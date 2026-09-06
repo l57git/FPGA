@@ -2,6 +2,10 @@
   "layer_validation/results/experiment_report.md": "101b020575a93419985347c78734bec999e20085a63c3c2641c9f26338f76739",
   "layer_validation/results/fault_localization.json": "33d11a64b9e4c5929f86971422b0961470019506b9a18d2e058308b2de494de3",
   "layer_validation/results/golden_vs_existing_hls.csv": "f56f20e85a5be3d93a581f49a2001da38ea56cdc96b4f95a43a35378a462a538",
+  "layer_validation/results/hls_experiment_report.md": "a6b6ae52b9b0dea66437c61a60e6caaeab0ec471a79d6ab2c5bba17d3c4980ea",
+  "layer_validation/results/hls_fault_propagation.png": "06c54c97d9e38ccbecff1a30ede74800afcd867ff0c136cd34b51105cfa0a9aa",
+  "layer_validation/results/hls_layer_metrics.csv": "5ba6de211d8cea9bdb2aa9a222d0fe83a9fdf1022130305c6404ccc2efe4afc9",
+  "layer_validation/results/hls_layer_verification.json": "d0613a3c8fe5071288b6c5ca634aa824503f7754fcba06dec128cfb37f2846a7",
   "layer_validation/results/input_metadata.json": "39c91c1d02b612295624c11a7ad1fd551f515a809716df0f9a6101a536e23849",
   "layer_validation/results/layer_diagnostics.png": "03d23846bcb33500a39cf726a7ccba400348ffae71ab8909669b36cd66e8814a",
   "layer_validation/results/layer_float_fixed_error.csv": "0aaf2b1d0a0a46ab77c7236de1247bf2e9b6284d431bc8626c998f10c11e94ce",
@@ -12,5 +16,11 @@
   "layer_validation/results/python_reference_trace.csv.gz": "007247fb8025df0a4cbbc179f6416c5d6ec693d278cf57b052ae3ab5c700ea75",
   "layer_validation/results/unit_tests.txt": "43db4729adb4d551b664392bb1facbbf69b4112db6f2a05d08a31994c6b0092f",
   "layer_validation/src/lenet_trace.cpp": "85e5954d4987d48c80838474b45ee8c387fc21c67d93867cf789a114c78bc38a",
+  "layer_validation/results/clean/predictions.csv": "39adc28532629f9bc444b9fc6a11cb9a2a4f5ce028f8c3c6a89f7ac084aa70ee",
+  "layer_validation/results/clean/run.log": "50fce8b37c5c86909a9710f3d34edcf7caf3b8fa867248d0198a7b6046e04dd4",
+  "layer_validation/results/clean/trace.csv.gz": "d29e06e43a4cda7873b009019d844784d4c5a43df16c10399cfa89d79c86dfba",
+  "layer_validation/results/fault/predictions.csv": "8f87ad3cd2199d3c634f63ab273b62ad0f1142022d60685ece0c21d361bb174e",
+  "layer_validation/results/fault/run.log": "3dffb250693fdf7fa77d048385de27d9b5c5b182d117da381f557017910b9e94",
+  "layer_validation/results/fault/trace.csv.gz": "d1674d0454118f2d663aed59cf373d6763ca8d0625ace43655b1c1491fe41d52",
   "layer_validation/results/hls_unavailable/run.log": "6244a9eaad77e2f3f83a8cf97623badd0c93b00fec0d70672b69fd0c45089a55"
 }

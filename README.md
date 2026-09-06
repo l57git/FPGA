@@ -16,7 +16,7 @@ Level 2 自采数据仍是后续工作。跨层FC资源复用与逐行权重缓�
 | 推荐配置 | `data_t = ap_fixed<10,6,AP_RND,AP_SAT>` | HLS ≥90%，相对 16 位损失 ≤0.5 pp |
 | 混合精度/流水化/AXI组织 | 五个新配置，1000张；W8 I1准确率98.3%，保留时钟未达标反例 | [实验报告和图表](mixed_precision/README.md) |
 | C/RTL协同仿真 | 16位逐行缓存版，两次真实参数调用Verilog PASS | [RTL周期与日志](rtl_validation/README.md) |
-| 分层参考/故障定位（离线） | 1000张定点参考与已有HLS一致；混合精度10000张Python为98.40%；新HLS轨迹待恢复安装盘 | [结果与边界](layer_validation/README.md) |
+| 分层参考/故障定位 | 1000张定点参考与已有HLS一致；混合精度10000张Python为98.40%；20张HLS七层逐位一致、故障定位通过 | [结果与边界](layer_validation/README.md) |
 | Level 2 自采数据 | 待完成 | [Level 2 说明](level2/README.md) |
 | 逐行权重缓存 | 1000张全部logits一致；共享版BRAM 46→14，DSP保持3 | [代码、结果与报告](row_cache/README.md) |
 | 跨层FC资源复用 | 1000张全部logits一致；DSP 10→3，BRAM 13→46 | [实验报告、原始结果和RTL](resource_reuse/README.md) |
@@ -34,7 +34,7 @@ W10 是满足门槛的最小位宽：HLS 准确率 98.00%，相对 W16 损失 0.
 - [`level1/`](level1/)：LeNet HLS 源码、testbench、验证工具和运行说明。
 - [`level1/results/numerical_precision/`](level1/results/numerical_precision/)：可直接审阅的位宽扫描结果、CSV 和图表。
 - [`level2/`](level2/)：真实场景预处理和压力测试工具。
-- [`layer_validation/`](layer_validation/)：独立整数参考、分层分析与故障定位器；HLS逐层验证未完成。
+- [`layer_validation/`](layer_validation/)：独立整数参考、分层分析与故障定位器；20张HLS逐层验证已通过。
 - [`mixed_precision/`](mixed_precision/)：权重/激活异构精度、共享核流水与AXI接口组织的对照。
 - [`rtl_validation/`](rtl_validation/)：两交易Verilog协同仿真、原始日志与周期可视化。
 - [`row_cache/`](row_cache/)：逐行权重缓存，含三架构资源对比、逐样本一致性验证和复现脚本。

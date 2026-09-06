@@ -1,0 +1,8 @@
+layer,elements,clean_mismatches,fault_mismatches
+conv1,69120,0,0
+pool1,17280,0,20
+conv2,20480,0,123
+pool2,5120,0,38
+fc1,2400,0,922
+fc2,1680,0,655
+logits,200,0,142
