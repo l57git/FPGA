@@ -1,0 +1,7 @@
+variant,weight_width,weight_integer,fc_pipeline,accuracy_percent,prediction_matches_base,logit_mae_base,DSP,BRAM,LUT,FF,cycles_min,cycles_max,estimated_clock_ns,core_ii,core_cycles_min,core_cycles_max,estimated_clock_within_target,eligible_subset
+w16i6_serial,16,6,0,98.2,1000,0.0,3,14,7169,4219,1657356,3100026,8.750,not pipelined,422,1282,True,True
+w16i6_pipeline,16,6,1,98.2,1000,0.0,3,14,7218,4278,1647396,2732826,10.601,1,90,262,False,True
+w8i6_serial,8,6,0,59.7,597,4.33744550779845,3,14,7130,4155,3206196,4559226,8.750,not pipelined,338,1026,True,False
+w8i1_serial,8,1,0,98.3,997,0.08568925805345,3,14,7010,4180,3206196,4559226,8.750,not pipelined,338,1026,True,True
+w8i1_pipeline,8,1,1,98.3,997,0.08568925805345,3,14,7053,4238,3198726,4283826,8.750,1,89,261,True,True
+w8i1_split,8,1,0,98.3,997,0.08568925805345,3,14,6866,4066,1414836,2767866,8.750,not pipelined,338,1026,True,True

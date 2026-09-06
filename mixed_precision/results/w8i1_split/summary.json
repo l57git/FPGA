@@ -1,0 +1,23 @@
+{
+  "variant": "w8i1_split",
+  "activation_width": 16,
+  "weight_width": 8,
+  "weight_integer": 1,
+  "fc_pipeline": 0,
+  "samples": 1000,
+  "tool": "Vivado HLS 2019.2",
+  "target_period_ns": 10,
+  "source_sha256": "3f15c85d58d9e48422fc4db940d9dad6219d60a691460b242dc1851ead0fd846",
+  "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3",
+  "header_sha256": "1868d4b8a31fa47e3052a94f6a6ad07686fffb2b48c0001e9dced2d6b7d1a7a0",
+  "testbench_sha256": "d128838ecb22a2f63972f5236f4cd531d92f98e6285101591b17710eadbe5b07",
+  "LUT": "6866",
+  "FF": "4066",
+  "DSP": "3",
+  "BRAM": "14",
+  "cycles_min": "1414836",
+  "cycles_max": "2767866",
+  "estimated_clock_ns": "8.750",
+  "correct": 983,
+  "accuracy_percent": 98.3
+}

@@ -1,0 +1,378 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/use/cpu/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/use/cpu/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'qd58a' on host 'l57-zj' (Windows NT_amd64 version 6.2) on Sat Sep 05 23:04:26 +0800 2026
+INFO: [HLS 200-10] In directory 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache'
+Sourcing Tcl script 'C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\rtl_validation\hls_work\row_cache\run.tcl'
+INFO: [HLS 200-10] Creating and opening project 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design'.
+INFO: [HLS 200-10] Adding design file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/level1/tb/tb_lenet.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../level1/tb/tb_lenet.cpp in release mode
+   Compiling ../../../../../../../row_cache/src/lenet_row.cpp in release mode
+   Generating csim.exe
+In file included from E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../../level1/tb/../src/lenet.hpp:4,
+                 from ../../../../../../../level1/tb/tb_lenet.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../../level1/tb/../src/lenet.hpp:4,
+                 from ../../../../../../../level1/tb/tb_lenet.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../../row_cache/src/../../level1/src/lenet.hpp:4,
+                 from ../../../../../../../row_cache/src/lenet_row.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../../row_cache/src/../../level1/src/lenet.hpp:4,
+                 from ../../../../../../../row_cache/src/lenet_row.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+sample=0, expected=7, prediction=7
+logits: -2.18066 -2.44531 1.8418 0.521484 -5.42969 -3.43457 -13.6846 12.6367 -2.55859 -0.839844
+sample=1, expected=2, prediction=2
+logits: 0.512695 5.47461 12.752 -1.83789 -10.0879 -6.41992 -5.16602 -2.01367 -0.266602 -14.1914
+progress=2/2
+correct=2/2, fixed_point_accuracy=100%
+BATCH COMPLETE
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 178.785 ; gain = 85.910
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 178.785 ; gain = 85.910
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 178.785 ; gain = 85.910
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'dense_row' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'max4' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:101) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 178.785 ; gain = 85.910
+INFO: [XFORM 203-602] Inlining function 'relu' into 'dense_row' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'max4' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:101) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:84:56) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:84:49) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:90:17) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:79:39) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:122:60) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:122:53) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:132:17) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:115:39) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:158:46) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:162:23) in function 'lenet_accel'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:21:39) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:21:33) in function 'dense_row'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:25:31) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:26:23) in function 'dense_row'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 196.641 ; gain = 103.766
+WARNING: [HLS 200-466] Port 'logits.V'() has different latency/depth on the same m_axi bundle:'gmem0'
+WARNING: [HLS 200-466] Port 'conv1_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'conv2_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'conv2_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc1_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc1_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc2_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc2_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc3_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc3_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 5 on port 'gmem0' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:87:32). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 5 on port 'gmem1' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:127:36). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 5 on port 'gmem1' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:87:32). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 9 on port 'gmem0' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:185:13). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-472] Inferring partial write operation for 'conv1.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:90:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool1.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:101:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'conv2.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:132:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool2.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:143:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_input.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:156:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_weights.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:168:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_output.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:171:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_input.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/row_cache/src/lenet_row.cpp:177:18)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 204.969 ; gain = 112.094
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lenet_accel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.441 seconds; current allocated memory: 147.346 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.164 seconds; current allocated memory: 147.726 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lenet_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 149.884 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.459 seconds; current allocated memory: 152.557 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_row'.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 153.537 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lenet_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/image_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv1_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv1_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv2_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv2_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc1_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc1_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc2_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc2_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc3_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc3_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/logits_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/prediction_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'lenet_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_dense_input_V' to 'lenet_accel_densebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_row_weights_V' to 'lenet_accel_row_wcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_dense_output_V' to 'lenet_accel_densedEe' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'return', 'image_V', 'conv1_w_V', 'conv1_b_V', 'conv2_w_V', 'conv2_b_V', 'fc1_w_V', 'fc1_b_V', 'fc2_w_V', 'fc2_b_V', 'fc3_w_V', 'fc3_b_V', 'logits_V' and 'prediction_V' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lenet_accel'.
+INFO: [HLS 200-111]  Elapsed time: 2.196 seconds; current allocated memory: 158.971 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_conv1_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_pool1_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_conv2_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_pool2_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_densebkb_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_densedEe_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 242.516 ; gain = 149.641
+INFO: [VHDL 208-304] Generating VHDL RTL for lenet_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for lenet_accel.
+WARNING: [COSIM 212-318] Design path length is too long. If you encounter problems, please reduce path length.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+WARNING: [COSIM 212-369] AXI_master port 'image.V' has a depth of '784'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'logits.V' has a depth of '10'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'conv1_w.V' has a depth of '150'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'conv1_b.V' has a depth of '6'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'conv2_w.V' has a depth of '2400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'conv2_b.V' has a depth of '16'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc1_w.V' has a depth of '30720'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc1_b.V' has a depth of '120'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc2_w.V' has a depth of '10080'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc2_b.V' has a depth of '84'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc3_w.V' has a depth of '840'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'fc3_b.V' has a depth of '10'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "E:/use/cpu/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_lenet_accel.cpp
+   Compiling tb_lenet.cpp_pre.cpp.tb.cpp
+   Compiling lenet_row.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+sample=0, expected=7, prediction=7
+logits: -2.18066 -2.44531 1.8418 0.521484 -5.42969 -3.43457 -13.6846 12.6367 -2.55859 -0.839844
+sample=1, expected=2, prediction=2
+logits: 0.512695 5.47461 12.752 -1.83789 -10.0879 -6.41992 -5.16602 -2.01367 -0.266602 -14.1914
+progress=2/2
+correct=2/2, fixed_point_accuracy=100%
+BATCH COMPLETE
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\rtl_validation\hls_work\row_cache\design\solution1\sim\verilog>set PATH= 
+
+C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\rtl_validation\hls_work\row_cache\design\solution1\sim\verilog>call E:/use/cpu/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_lenet_accel_top glbl -prj lenet_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s lenet_accel  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/use/cpu/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_lenet_accel_top glbl -prj lenet_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s lenet_accel 
+Multi-threading is on. Using 30 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_master_gmem0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/dense_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_row
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_lenet_accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_conv1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv1_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_conv2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv2_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_densebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_densebkb_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_densebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_densedEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_densedEe_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_densedEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_pool1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool1_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_pool2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool2_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool2_V
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lenet_accel_conv1_V_ram
+Compiling module xil_defaultlib.lenet_accel_conv1_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_pool1_V_ram
+Compiling module xil_defaultlib.lenet_accel_pool1_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_conv2_V_ram
+Compiling module xil_defaultlib.lenet_accel_conv2_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_pool2_V_ram
+Compiling module xil_defaultlib.lenet_accel_pool2_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_densebkb_ram
+Compiling module xil_defaultlib.lenet_accel_densebkb(DataWidth=1...
+Compiling module xil_defaultlib.lenet_accel_densedEe_ram
+Compiling module xil_defaultlib.lenet_accel_densedEe(DataWidth=1...
+Compiling module xil_defaultlib.lenet_accel_control_s_axi
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_throttl_...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_decoder(...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_write(NU...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_read(NUM...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi(NUM_READ...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_throttl_...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_decoder(...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_write(NU...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_read(NUM...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi(NUM_READ...
+Compiling module xil_defaultlib.dense_row
+Compiling module xil_defaultlib.lenet_accel
+Compiling module xil_defaultlib.AESL_axi_master_gmem0
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.apatb_lenet_accel_top
+Compiling module work.glbl
+Built simulation snapshot lenet_accel
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/xsim.dir/lenet_accel/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep  5 23:05:43 2026...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/lenet_accel/xsim_script.tcl
+# xsim {lenet_accel} -autoloadwcfg -tclbatch {lenet_accel.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source lenet_accel.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
+// RTL Simulation : 1 / 2 [0.00%] @ "28223465000"
+// RTL Simulation : 2 / 2 [100.00%] @ "56446735000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 56446775 ns : File "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.autotb.v" Line 671
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:05:17 . Memory (MB): peak = 224.031 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Sep  5 23:11:08 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+sample=0, expected=7, prediction=7
+logits: -2.18066 -2.44531 1.8418 0.521484 -5.42969 -3.43457 -13.6846 12.6367 -2.55859 -0.839844
+sample=1, expected=2, prediction=2
+logits: 0.512695 5.47461 12.752 -1.83789 -10.0879 -6.41992 -5.16602 -2.01367 -0.266602 -14.1914
+progress=2/2
+correct=2/2, fixed_point_accuracy=100%
+BATCH COMPLETE
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total elapsed time: 405.798 seconds; peak allocated memory: 158.971 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Sep  5 23:11:11 2026...

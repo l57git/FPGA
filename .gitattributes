@@ -4,3 +4,8 @@ resource_reuse/src/lenet_shared.cpp -text
 
 row_cache/results/** -text
 row_cache/src/lenet_row.cpp -text
+
+mixed_precision/results/** -text
+mixed_precision/src/** -text
+mixed_precision/tb/** -text
+rtl_validation/results/** -text

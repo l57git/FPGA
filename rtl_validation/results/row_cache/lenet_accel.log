@@ -1,0 +1,190 @@
+WARNING: [COSIM-318] Design path length is too long. If you encounter problems, please reduce path length.
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+WARNING: [COSIM-369] AXI_master port 'image.V' has a depth of '784'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'logits.V' has a depth of '10'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'conv1_w.V' has a depth of '150'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'conv1_b.V' has a depth of '6'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'conv2_w.V' has a depth of '2400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'conv2_b.V' has a depth of '16'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc1_w.V' has a depth of '30720'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc1_b.V' has a depth of '120'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc2_w.V' has a depth of '10080'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc2_b.V' has a depth of '84'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc3_w.V' has a depth of '840'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'fc3_b.V' has a depth of '10'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "E:/use/cpu/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_lenet_accel.cpp
+   Compiling tb_lenet.cpp_pre.cpp.tb.cpp
+   Compiling lenet_row.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+sample=0, expected=7, prediction=7
+logits: -2.18066 -2.44531 1.8418 0.521484 -5.42969 -3.43457 -13.6846 12.6367 -2.55859 -0.839844
+sample=1, expected=2, prediction=2
+logits: 0.512695 5.47461 12.752 -1.83789 -10.0879 -6.41992 -5.16602 -2.01367 -0.266602 -14.1914
+progress=2/2
+correct=2/2, fixed_point_accuracy=100%
+BATCH COMPLETE
+
+C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\rtl_validation\hls_work\row_cache\design\solution1\sim\verilog>set PATH= 
+
+C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\rtl_validation\hls_work\row_cache\design\solution1\sim\verilog>call E:/use/cpu/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_lenet_accel_top glbl -prj lenet_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s lenet_accel  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/use/cpu/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_lenet_accel_top glbl -prj lenet_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile E:/use/cpu/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s lenet_accel 
+Multi-threading is on. Using 30 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_master_gmem0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/dense_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_row
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_lenet_accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_conv1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv1_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_conv2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv2_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_conv2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_densebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_densebkb_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_densebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_densedEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_densedEe_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_densedEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem0_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module lenet_accel_gmem1_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_pool1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool1_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel_pool2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool2_V_ram
+INFO: [VRFC 10-311] analyzing module lenet_accel_pool2_V
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lenet_accel_conv1_V_ram
+Compiling module xil_defaultlib.lenet_accel_conv1_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_pool1_V_ram
+Compiling module xil_defaultlib.lenet_accel_pool1_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_conv2_V_ram
+Compiling module xil_defaultlib.lenet_accel_conv2_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_pool2_V_ram
+Compiling module xil_defaultlib.lenet_accel_pool2_V(DataWidth=15...
+Compiling module xil_defaultlib.lenet_accel_densebkb_ram
+Compiling module xil_defaultlib.lenet_accel_densebkb(DataWidth=1...
+Compiling module xil_defaultlib.lenet_accel_densedEe_ram
+Compiling module xil_defaultlib.lenet_accel_densedEe(DataWidth=1...
+Compiling module xil_defaultlib.lenet_accel_control_s_axi
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_throttl_...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_decoder(...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_write(NU...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi_read(NUM...
+Compiling module xil_defaultlib.lenet_accel_gmem0_m_axi(NUM_READ...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_throttl_...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_decoder(...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_fifo(DAT...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_write(NU...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_buffer(D...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_reg_slic...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi_read(NUM...
+Compiling module xil_defaultlib.lenet_accel_gmem1_m_axi(NUM_READ...
+Compiling module xil_defaultlib.dense_row
+Compiling module xil_defaultlib.lenet_accel
+Compiling module xil_defaultlib.AESL_axi_master_gmem0
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.apatb_lenet_accel_top
+Compiling module work.glbl
+Built simulation snapshot lenet_accel
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/xsim.dir/lenet_accel/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep  5 23:05:43 2026...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/lenet_accel/xsim_script.tcl
+# xsim {lenet_accel} -autoloadwcfg -tclbatch {lenet_accel.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source lenet_accel.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
+// RTL Simulation : 1 / 2 [0.00%] @ "28223465000"
+// RTL Simulation : 2 / 2 [100.00%] @ "56446735000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 56446775 ns : File "C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/rtl_validation/hls_work/row_cache/design/solution1/sim/verilog/lenet_accel.autotb.v" Line 671
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:05:17 . Memory (MB): peak = 224.031 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Sep  5 23:11:08 2026...
+sample=0, expected=7, prediction=7
+logits: -2.18066 -2.44531 1.8418 0.521484 -5.42969 -3.43457 -13.6846 12.6367 -2.55859 -0.839844
+sample=1, expected=2, prediction=2
+logits: 0.512695 5.47461 12.752 -1.83789 -10.0879 -6.41992 -5.16602 -2.01367 -0.266602 -14.1914
+progress=2/2
+correct=2/2, fixed_point_accuracy=100%
+BATCH COMPLETE
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

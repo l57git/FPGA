@@ -1,0 +1,8 @@
+{
+  "samples": 1000,
+  "w16_pipeline_all_fields_identical": true,
+  "w8i1_pipeline_all_fields_identical": true,
+  "interface_all_fields_identical": true,
+  "single_core_all_cases": true,
+  "input_sha256": "52ccd61e16e80723e807ea734fff931a984fb10cbf30d9e3bf52fff0486df7d3"
+}

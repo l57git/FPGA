@@ -1,0 +1,227 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/use/cpu/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/use/cpu/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'qd58a' on host 'l57-zj' (Windows NT_amd64 version 6.2) on Sat Sep 05 23:01:33 +0800 2026
+INFO: [HLS 200-10] In directory 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/hls_work/w8i1_serial'
+Sourcing Tcl script 'C:\Users\qd58a\Documents\Codex\2026-08-31\https-github-com-robin-wzq-bit\outputs\FPGA_resource_reuse\mixed_precision\hls_work\w8i1_serial\run.tcl'
+INFO: [HLS 200-10] Creating and opening project 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/hls_work/w8i1_serial/design'.
+INFO: [HLS 200-10] Adding design file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/tb/tb_lenet.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/hls_work/w8i1_serial/design/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../tb/tb_lenet.cpp in release mode
+   Compiling ../../../../../../src/lenet_mixed.cpp in release mode
+   Generating csim.exe
+In file included from E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../tb/../src/lenet.hpp:4,
+                 from ../../../../../../tb/tb_lenet.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../tb/../src/lenet.hpp:4,
+                 from ../../../../../../tb/tb_lenet.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../src/lenet.hpp:4,
+                 from ../../../../../../src/lenet_mixed.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from E:/use/cpu/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from E:/use/cpu/Vivado/2019.2/include/hls_half.h:44,
+                 from E:/use/cpu/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_common.h:641,
+                 from E:/use/cpu/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../../src/lenet.hpp:4,
+                 from ../../../../../../src/lenet_mixed.cpp:1:
+E:/use/cpu/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+sample=0, expected=7, prediction=7
+logits: -2.14062 -2.54492 1.67188 0.652344 -5.39258 -3.41992 -13.6758 12.6699 -2.48145 -0.738281
+sample=1, expected=2, prediction=2
+logits: 0.519531 5.2793 12.8604 -1.86523 -9.94238 -6.32812 -5.14648 -2.12793 -0.128906 -14.248
+sample=2, expected=1, prediction=1
+logits: -1.72949 8.23535 -2.05273 -5.76172 0.94043 -3.875 -0.231445 0.12207 -0.908203 -2.48242
+sample=3, expected=0, prediction=0
+logits: 10.3057 -10.3369 0.875977 -3.8623 -6.90039 -2.81348 3.14453 -3.81934 -2.40039 -2.29297
+sample=4, expected=4, prediction=4
+logits: -5.16016 -5.04395 -4.3877 -9.48633 11.4082 -5.50781 -3.95605 -1.53809 -1.7002 4.4541
+progress=100/1000
+progress=200/1000
+misclassified sample=247, expected=4, prediction=2
+progress=300/1000
+misclassified sample=320, expected=9, prediction=1
+misclassified sample=321, expected=2, prediction=7
+progress=400/1000
+misclassified sample=449, expected=3, prediction=5
+misclassified sample=495, expected=8, prediction=0
+progress=500/1000
+misclassified sample=543, expected=8, prediction=3
+misclassified sample=582, expected=8, prediction=2
+misclassified sample=583, expected=2, prediction=7
+misclassified sample=591, expected=8, prediction=2
+progress=600/1000
+progress=700/1000
+misclassified sample=707, expected=4, prediction=9
+misclassified sample=720, expected=5, prediction=8
+misclassified sample=726, expected=7, prediction=9
+misclassified sample=740, expected=4, prediction=9
+progress=800/1000
+misclassified sample=882, expected=9, prediction=7
+progress=900/1000
+misclassified sample=938, expected=3, prediction=5
+misclassified sample=947, expected=8, prediction=9
+misclassified sample=956, expected=1, prediction=2
+progress=1000/1000
+correct=983/1000, fixed_point_accuracy=98.3%
+BATCH COMPLETE
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:05:19 . Memory (MB): peak = 178.141 ; gain = 85.184
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:05:19 . Memory (MB): peak = 178.141 ; gain = 85.184
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:05:20 . Memory (MB): peak = 178.141 ; gain = 85.184
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'dense_row' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'max4' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:104) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:05:20 . Memory (MB): peak = 178.141 ; gain = 85.184
+INFO: [XFORM 203-602] Inlining function 'relu' into 'dense_row' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'max4' into 'lenet_accel' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:104) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:87:56) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:87:49) in function 'lenet_accel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:93:17) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:82:39) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:125:60) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:125:53) in function 'lenet_accel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:135:17) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:118:39) in function 'lenet_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:161:46) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:165:23) in function 'lenet_accel'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:21:39) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:21:33) in function 'dense_row'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:28:31) to (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:29:23) in function 'dense_row'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:05:22 . Memory (MB): peak = 197.340 ; gain = 104.383
+WARNING: [HLS 200-451] Automatic burst inferencing is disabled for port 'conv1_w.V' as a bitwidth mismatch was detected between port 'conv1_w.V' and its bundle 'gmem1' (8 vs. 16)(C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:90:32). To allow bursting all ports sharing a bundle must have the same bitwidth.
+WARNING: [HLS 200-451] Automatic burst inferencing is disabled for port 'conv2_w.V' as a bitwidth mismatch was detected between port 'conv2_w.V' and its bundle 'gmem1' (8 vs. 16)(C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:130:36). To allow bursting all ports sharing a bundle must have the same bitwidth.
+WARNING: [HLS 200-466] Port 'logits.V'() has different latency/depth on the same m_axi bundle:'gmem0'
+WARNING: [HLS 200-466] Port 'conv1_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'conv2_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'conv2_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc1_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc1_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc2_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc2_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc3_w.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+WARNING: [HLS 200-466] Port 'fc3_b.V'() has different latency/depth on the same m_axi bundle:'gmem1'
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 5 on port 'gmem0' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:90:32). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 9 on port 'gmem0' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:188:13). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-472] Inferring partial write operation for 'conv1.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:93:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool1.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:104:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'conv2.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:135:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool2.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:146:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_input.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:159:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_weights.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:171:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_output.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:174:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'dense_input.V' (C:/Users/qd58a/Documents/Codex/2026-08-31/https-github-com-robin-wzq-bit/outputs/FPGA_resource_reuse/mixed_precision/src/lenet_mixed.cpp:180:18)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:05:31 . Memory (MB): peak = 206.855 ; gain = 113.898
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lenet_accel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 330.975 seconds; current allocated memory: 148.309 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 148.636 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lenet_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 150.783 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.425 seconds; current allocated memory: 153.427 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_mul_mul_19s_24s_43_1_1' to 'lenet_accel_mul_mbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'lenet_accel_mul_mbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_row'.
+INFO: [HLS 200-111]  Elapsed time: 0.526 seconds; current allocated memory: 154.337 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lenet_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/image_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv1_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv1_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv2_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/conv2_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc1_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc1_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc2_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc2_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc3_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/fc3_b_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/logits_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_accel/prediction_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'lenet_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_dense_input_V' to 'lenet_accel_densecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_row_weights_V' to 'lenet_accel_row_wdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_dense_output_V' to 'lenet_accel_denseeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'return', 'image_V', 'conv1_w_V', 'conv1_b_V', 'conv2_w_V', 'conv2_b_V', 'fc1_w_V', 'fc1_b_V', 'fc2_w_V', 'fc2_b_V', 'fc3_w_V', 'fc3_b_V', 'logits_V' and 'prediction_V' to AXI-Lite port control.
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_mul_mul_24s_19s_43_1_1' to 'lenet_accel_mul_mfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_accel_mul_mul_23ns_19s_43_1_1' to 'lenet_accel_mul_mg8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'lenet_accel_mul_mfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lenet_accel_mul_mg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lenet_accel'.
+INFO: [HLS 200-111]  Elapsed time: 1.968 seconds; current allocated memory: 159.699 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_conv1_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_pool1_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_conv2_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_pool2_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_densecud_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_row_wdEe_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'lenet_accel_denseeOg_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:05:45 . Memory (MB): peak = 244.172 ; gain = 151.215
+INFO: [VHDL 208-304] Generating VHDL RTL for lenet_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for lenet_accel.
+INFO: [HLS 200-112] Total elapsed time: 345.438 seconds; peak allocated memory: 159.699 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Sep  5 23:07:18 2026...

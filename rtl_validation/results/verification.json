@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rtl": "Verilog",
+  "simulator": "xsim",
+  "samples": 2,
+  "source_matches_row_cache": true,
+  "transactions": [
+    {
+      "index": 0,
+      "latency_cycles": 2822332,
+      "latency_ms": 28.22332,
+      "interval_cycles": 2822333
+    },
+    {
+      "index": 1,
+      "latency_cycles": 2822327,
+      "latency_ms": 28.223270000000003,
+      "interval_cycles": null
+    }
+  ]
+}
