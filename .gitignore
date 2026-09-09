@@ -21,6 +21,7 @@ __pycache__/
 *.a
 
 # Reproducible MNIST inputs and large experiment outputs
+/data/
 level1/data/mnist/
 level1/data/lenet_accuracy_10000.bin
 level1/results/float_results.csv
@@ -33,6 +34,7 @@ level1/results/numerical_precision*/
 
 # Level 2 self-collected inputs are kept local until reviewed for submission
 level2/data/self_collected/
+level2/results/self_collected/*.bin
 
 # Local Claude/OpenSpec and CodeGraph state
 .claude/

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "sample_count": 503,
+  "float_correct": 56,
+  "float_accuracy_percent": 11.133200795228628,
+  "hls_correct": 56,
+  "hls_accuracy_percent": 11.133200795228628,
+  "absolute_accuracy_difference_percent": 0.0,
+  "prediction_matches": 503,
+  "prediction_consistency_percent": 100.0,
+  "mismatch_count": 0,
+  "hls_threshold_percent": 0.0,
+  "hls_threshold_passed": true,
+  "float_results": "/home/wjj/FPGA/level2/results/self_collected/python_results.csv",
+  "hls_results": "/home/wjj/FPGA/level2/results/self_collected/hls_results.csv",
+  "mismatches": "/home/wjj/FPGA/level2/results/self_collected/python_hls_mismatches.csv"
+}

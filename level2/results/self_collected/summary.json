@@ -1,0 +1,194 @@
+{
+  "status": "PYTHON_AND_HLS_COMPLETE_BACKGROUND_PENDING",
+  "source_status": "pending_confirmation",
+  "input_root": "data/data/raw",
+  "sample_count": 503,
+  "per_class_counts": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 51,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 52,
+    "8": 50,
+    "9": 50
+  },
+  "excluded_count": 0,
+  "excluded_by_reason": {},
+  "image_sizes": {
+    "760x1280": 503
+  },
+  "image_modes": {
+    "RGB": 503
+  },
+  "parameter_source": "level1/data/lenet_accuracy_1.bin",
+  "parameter_sha256": "72982df94c34bc968ff37f8b4c68d0df9e4434545c00d7128600dd8c6931c340",
+  "manifest_sha256": "659815e45d5846620b940e5943159a5c5fc36e319abe55392ce8fdf7e79a2f8e",
+  "git": {
+    "commit": "09ccda1fea2e8ff91eb87493c04c8f3014d5236a",
+    "worktree_dirty": true,
+    "status_short": [
+      " M .gitignore",
+      " M level2/tools/level2_validation.py",
+      " M level2/tools/test_level2_validation.py",
+      "?? .mcp.json",
+      "?? \"docs/Level2\\350\\207\\252\\351\\207\\207\\346\\225\\260\\346\\215\\256\\351\\252\\214\\350\\257\\201\\350\\241\\214\\345\\212\\250spec.md\"",
+      "?? level2/results/self_collected/"
+    ]
+  },
+  "direct_resize": {
+    "sample_count": 503,
+    "correct": 112,
+    "accuracy_percent": 22.266401590457257,
+    "per_class": {
+      "0": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "1": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "2": {
+        "count": 50,
+        "correct": 17,
+        "accuracy_percent": 34.0
+      },
+      "3": {
+        "count": 51,
+        "correct": 30,
+        "accuracy_percent": 58.8235294117647
+      },
+      "4": {
+        "count": 50,
+        "correct": 8,
+        "accuracy_percent": 16.0
+      },
+      "5": {
+        "count": 50,
+        "correct": 3,
+        "accuracy_percent": 6.0
+      },
+      "6": {
+        "count": 50,
+        "correct": 5,
+        "accuracy_percent": 10.0
+      },
+      "7": {
+        "count": 52,
+        "correct": 2,
+        "accuracy_percent": 3.8461538461538463
+      },
+      "8": {
+        "count": 50,
+        "correct": 42,
+        "accuracy_percent": 84.0
+      },
+      "9": {
+        "count": 50,
+        "correct": 5,
+        "accuracy_percent": 10.0
+      }
+    }
+  },
+  "preprocessed": {
+    "sample_count": 503,
+    "correct": 56,
+    "accuracy_percent": 11.133200795228628,
+    "per_class": {
+      "0": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "1": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "2": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "3": {
+        "count": 51,
+        "correct": 22,
+        "accuracy_percent": 43.13725490196079
+      },
+      "4": {
+        "count": 50,
+        "correct": 0,
+        "accuracy_percent": 0.0
+      },
+      "5": {
+        "count": 50,
+        "correct": 11,
+        "accuracy_percent": 22.0
+      },
+      "6": {
+        "count": 50,
+        "correct": 1,
+        "accuracy_percent": 2.0
+      },
+      "7": {
+        "count": 52,
+        "correct": 4,
+        "accuracy_percent": 7.6923076923076925
+      },
+      "8": {
+        "count": 50,
+        "correct": 12,
+        "accuracy_percent": 24.0
+      },
+      "9": {
+        "count": 50,
+        "correct": 6,
+        "accuracy_percent": 12.0
+      }
+    }
+  },
+  "preprocessing_gain_percent_points": -11.133200795228628,
+  "preprocessing_pipeline": [
+    "grayscale",
+    "background estimation and polarity normalization",
+    "ROI crop",
+    "aspect-preserving resize",
+    "center of mass alignment",
+    "28x28 normalization"
+  ],
+  "hls": {
+    "status": "complete",
+    "csim_status": "PASS",
+    "tool_version": "Vitis HLS 2025.2.1",
+    "target_part": "xc7z020-clg400-1",
+    "clock_ns": 10,
+    "sample_count": 503,
+    "correct": 56,
+    "accuracy_percent": 11.133200795228628,
+    "prediction_consistency_percent": 100.0,
+    "mismatch_count": 0,
+    "accuracy_threshold_percent": 0.0,
+    "csim_errors": 0,
+    "comparison_report": "level2/results/self_collected/python_hls_comparison.json"
+  },
+  "background": {
+    "status": "not_provided",
+    "sample_count": 0,
+    "rejection_rule": "not available"
+  },
+  "artifacts": {
+    "manifest": "manifest.csv",
+    "predictions": "predictions.csv",
+    "python_results": "python_results.csv",
+    "hls_blob": "preprocessed_self_collected.bin",
+    "preprocessing_examples": "preprocessing_examples.png",
+    "confusion_direct_resize": "confusion_direct_resize.png",
+    "confusion_preprocessed": "confusion_preprocessed.png",
+    "result_overview": "result_overview.png"
+  }
+}
