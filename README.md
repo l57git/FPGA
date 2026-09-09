@@ -2,7 +2,8 @@
 
 本仓库实现面向 MNIST 的 LeNet 推理加速器，使用 Vivado/Vitis HLS 完成功能仿真和
 综合验证。当前主线为任务 2（LeNet 路线），Level 1 的标准 MNIST 验证已通过；
-Level 2 自采数据仍是后续工作。跨层FC资源复用与逐行权重缓存两个模块均已完成C仿真和HLS综合。
+Level 2 自采数据已完成一轮可复现的 Python 与 HLS C Simulation 开发验证，正式验收仍需
+补齐数据来源和背景负样本说明。跨层FC资源复用与逐行权重缓存两个模块均已完成C仿真和HLS综合。
 
 完整的课程要求对照见[当前验收状态](docs/当前验收状态.md)，模块框图及地址/控制说明见[架构说明](docs/架构与调度说明.md)。课程仅要求仿真与综合，不要求上板。
 
@@ -17,7 +18,7 @@ Level 2 自采数据仍是后续工作。跨层FC资源复用与逐行权重缓�
 | 混合精度/流水化/AXI组织 | 五个新配置，1000张；W8 I1准确率98.3%，保留时钟未达标反例 | [实验报告和图表](mixed_precision/README.md) |
 | C/RTL协同仿真 | 16位逐行缓存版，两次真实参数调用Verilog PASS | [RTL周期与日志](rtl_validation/README.md) |
 | 分层参考/故障定位 | 1000张定点参考与已有HLS一致；混合精度10000张Python为98.40%；20张HLS七层逐位一致、故障定位通过 | [结果与边界](layer_validation/README.md) |
-| Level 2 自采数据 | 待完成 | [Level 2 说明](level2/README.md) |
+| Level 2 自采数据 | 开发验证完成：503张，直接缩放22.27%，当前预处理11.13%；HLS CSim 503/503，Python/HLS一致率100% | [Level 2 说明](level2/README.md)、[执行记录](docs/Level2自采数据执行记录.md) |
 | 逐行权重缓存 | 1000张全部logits一致；共享版BRAM 46→14，DSP保持3 | [代码、结果与报告](row_cache/README.md) |
 | 跨层FC资源复用 | 1000张全部logits一致；DSP 10→3，BRAM 13→46 | [实验报告、原始结果和RTL](resource_reuse/README.md) |
 
@@ -29,11 +30,39 @@ W10 是满足门槛的最小位宽：HLS 准确率 98.00%，相对 W16 损失 0.
 
 ![Synthesis resources versus data width](level1/results/numerical_precision/resources_vs_width.png)
 
+## Level 2 自采数据复现
+
+当前本地数据位于 `data/data/raw/0` 到 `data/data/raw/9`，原始图片不随仓库提交，根目录
+`data/` 已由 `.gitignore` 忽略。数据来源目前仍待项目组确认，因此结果应称为开发验证数据，
+不能直接替代正式的组员实拍验收数据。
+
+在仓库根目录执行 Python 全量评估：
+
+```sh
+python3 level2/tools/level2_validation.py evaluate-dataset \
+  --input data/data/raw \
+  --parameters level1/data/lenet_accuracy_1.bin \
+  --output level2/results/self_collected
+```
+
+若本机已配置 Vivado HLS 或 Vitis HLS，再执行同批数据的 C Simulation 和 Python/HLS 对照：
+
+```sh
+bash level2/run_self_collected_hls.sh
+```
+
+Windows 环境可在完成 Python 评估后运行 `level2/run_self_collected_hls.bat`。该脚本只执行
+C Simulation；新增输入不改变 RTL，因此不需要为这批数据重复综合、启动 Vivado GUI 或上板。
+当前实测使用 Vitis HLS 2025.2.1，完整结果为 56/503（11.13%），与 Python 预测逐样本一致。
+
+结果和限制见：[Level 2 执行记录](docs/Level2自采数据执行记录.md)、[实验报告](level2/results/self_collected/experiment_report.md)、[机器可读摘要](level2/results/self_collected/summary.json)。
+
 ## 目录
 
 - [`level1/`](level1/)：LeNet HLS 源码、testbench、验证工具和运行说明。
 - [`level1/results/numerical_precision/`](level1/results/numerical_precision/)：可直接审阅的位宽扫描结果、CSV 和图表。
 - [`level2/`](level2/)：真实场景预处理和压力测试工具。
+- [`level2/results/self_collected/`](level2/results/self_collected/)：自采数据开发验证的清单、CSV、HLS 对照、图表和报告。
 - [`layer_validation/`](layer_validation/)：独立整数参考、分层分析与故障定位器；20张HLS逐层验证已通过。
 - [`mixed_precision/`](mixed_precision/)：权重/激活异构精度、共享核流水与AXI接口组织的对照。
 - [`rtl_validation/`](rtl_validation/)：两交易Verilog协同仿真、原始日志与周期可视化。
