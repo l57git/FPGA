@@ -1,0 +1,174 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /opt/vlab/vivado/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/vlab/vivado/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ubuntu' on host 'VM14143-yyh.vm.ibuglab.com' (Linux_x86_64 version 7.0.14-9-pve) on Mon Sep 14 10:52:03 CST 2026
+INFO: [HLS 200-10] On os Ubuntu 24.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/ubuntu/workspace/FPGA'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to /usr/include/x86_64-linux-gnu.
+WARNING: [HLS 200-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /usr/include/x86_64-linux-gnu.
+Sourcing Tcl script '/home/ubuntu/workspace/FPGA/level1/run_hls.tcl'
+LENET_DATA_W=8
+LENET_DATA_TYPE=ap_fixed<8,6,AP_RND,AP_SAT>
+LENET_ACC_TYPE=ap_fixed<32,14,AP_RND,AP_SAT>
+LENET_PART=xc7z020clg400-1
+LENET_CLOCK_NS=10
+LENET_HLS_WORKSPACE=/home/ubuntu/workspace/FPGA/bonus/hls_work/w8a8_i6_qat_csim
+LENET_CSIM_OPT=1
+LENET_CSIM_MFLAGS=
+INFO: [HLS 200-10] Creating and opening project '/home/ubuntu/workspace/FPGA/bonus/hls_work/w8a8_i6_qat_csim/lenet_level1_hls'.
+INFO: [HLS 200-10] Adding design file '/home/ubuntu/workspace/FPGA/level1/src/lenet.cpp' to the project
+INFO: [HLS 200-10] Adding design file '/home/ubuntu/workspace/FPGA/level1/src/lenet.hpp' to the project
+INFO: [HLS 200-10] Adding test bench file '/home/ubuntu/workspace/FPGA/level1/tb/tb_lenet.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/ubuntu/workspace/FPGA/bonus/hls_work/w8a8_i6_qat_csim/lenet_level1_hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+LENET_ACCURACY_BLOB=/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/qat_hls_input.bin
+LENET_RESULT_CSV=/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/hls_predictions.csv
+LENET_ACCURACY_THRESHOLD=0
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../level1/tb/tb_lenet.cpp in release mode
+   Compiling ../../../../../../../level1/src/lenet.cpp in release mode
+   Generating csim.exe
+sample=0, expected=7, prediction=7
+logits: -2.5 -4.25 0.5 0.25 -7.5 -10.25 -16.25 11 -3 0
+sample=1, expected=2, prediction=2
+logits: -1.5 -0.5 9.75 -4.75 -7.75 -12.75 -4.75 -5.75 -1 -15.75
+sample=2, expected=1, prediction=1
+logits: -3.5 6.5 -3.25 -6.25 -1 -5.75 -2.25 -1.25 -2.25 -3.75
+sample=3, expected=0, prediction=0
+logits: 10 -8.75 0.25 -6.75 -6.75 -9.25 -0.25 -3.25 -5 -4
+sample=4, expected=4, prediction=4
+logits: -6 -3.75 -7.5 -9.75 8.25 -8.75 -7.5 -0.75 -7.25 -0.25
+misclassified sample=33, expected=4, prediction=6
+misclassified sample=73, expected=9, prediction=7
+progress=100/10000
+progress=200/10000
+misclassified sample=259, expected=6, prediction=0
+progress=300/10000
+misclassified sample=320, expected=9, prediction=1
+misclassified sample=321, expected=2, prediction=7
+misclassified sample=340, expected=5, prediction=3
+misclassified sample=359, expected=9, prediction=4
+progress=400/10000
+misclassified sample=445, expected=6, prediction=0
+misclassified sample=449, expected=3, prediction=5
+misclassified sample=495, expected=8, prediction=0
+progress=500/10000
+misclassified sample=511, expected=4, prediction=1
+misclassified sample=578, expected=3, prediction=7
+misclassified sample=582, expected=8, prediction=2
+misclassified sample=583, expected=2, prediction=7
+progress=600/10000
+misclassified sample=619, expected=1, prediction=8
+misclassified sample=646, expected=2, prediction=6
+misclassified sample=659, expected=2, prediction=7
+misclassified sample=684, expected=7, prediction=2
+misclassified sample=685, expected=8, prediction=2
+misclassified sample=691, expected=8, prediction=4
+progress=700/10000
+progress=800/10000
+progress=900/10000
+progress=1000/10000
+progress=1100/10000
+progress=1200/10000
+progress=1300/10000
+progress=1400/10000
+progress=1500/10000
+progress=1600/10000
+progress=1700/10000
+progress=1800/10000
+progress=1900/10000
+progress=2000/10000
+progress=2100/10000
+progress=2200/10000
+progress=2300/10000
+progress=2400/10000
+progress=2500/10000
+progress=2600/10000
+progress=2700/10000
+progress=2800/10000
+progress=2900/10000
+progress=3000/10000
+progress=3100/10000
+progress=3200/10000
+progress=3300/10000
+progress=3400/10000
+progress=3500/10000
+progress=3600/10000
+progress=3700/10000
+progress=3800/10000
+progress=3900/10000
+progress=4000/10000
+progress=4100/10000
+progress=4200/10000
+progress=4300/10000
+progress=4400/10000
+progress=4500/10000
+progress=4600/10000
+progress=4700/10000
+progress=4800/10000
+progress=4900/10000
+progress=5000/10000
+progress=5100/10000
+progress=5200/10000
+progress=5300/10000
+progress=5400/10000
+progress=5500/10000
+progress=5600/10000
+progress=5700/10000
+progress=5800/10000
+progress=5900/10000
+progress=6000/10000
+progress=6100/10000
+progress=6200/10000
+progress=6300/10000
+progress=6400/10000
+progress=6500/10000
+progress=6600/10000
+progress=6700/10000
+progress=6800/10000
+progress=6900/10000
+progress=7000/10000
+progress=7100/10000
+progress=7200/10000
+progress=7300/10000
+progress=7400/10000
+progress=7500/10000
+progress=7600/10000
+progress=7700/10000
+progress=7800/10000
+progress=7900/10000
+progress=8000/10000
+progress=8100/10000
+progress=8200/10000
+progress=8300/10000
+progress=8400/10000
+progress=8500/10000
+progress=8600/10000
+progress=8700/10000
+progress=8800/10000
+progress=8900/10000
+progress=9000/10000
+progress=9100/10000
+progress=9200/10000
+progress=9300/10000
+progress=9400/10000
+progress=9500/10000
+progress=9600/10000
+progress=9700/10000
+progress=9800/10000
+progress=9900/10000
+progress=10000/10000
+correct=9698/10000, fixed_point_accuracy=96.98%
+BATCH COMPLETE
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+LENET_SKIP_SYNTH=1; skipping csynth_design.
+INFO: [Common 17-206] Exiting vivado_hls at Mon Sep 14 11:04:47 2026...

@@ -1,0 +1,4 @@
+model,sample_count,correct,accuracy_percent,prediction_matches_float,prediction_match_float_percent,logit_mae_vs_float,logit_mse_vs_float,logit_rmse_vs_float,logit_max_abs_error_vs_float
+float,10000,9837,98.37,,,,,,
+ptq,10000,5693,56.93,5717,57.17,4.350475119375498,31.903655710847378,5.648332117612011,22.321468353271484
+qat,10000,9702,97.02,9778,97.78,2.7559577023757433,10.729553889428544,3.2755997755263913,14.254196286201477

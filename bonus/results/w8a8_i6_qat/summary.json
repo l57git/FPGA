@@ -1,0 +1,116 @@
+{
+  "activation_spec": {
+    "bits": 8,
+    "fraction_bits": 2,
+    "integer_bits": 6,
+    "maximum": 31.75,
+    "minimum": -32.0,
+    "signed": true,
+    "step": 0.25
+  },
+  "batch_size": 256,
+  "device": "cpu",
+  "distill_temperature": 2.0,
+  "distill_weight": 0.25,
+  "epochs": 2,
+  "experiment": "LeNet MNIST QAT bonus",
+  "history": [
+    {
+      "epoch": 1,
+      "test_accuracy_percent": 96.45,
+      "test_correct": 9645,
+      "test_samples": 10000,
+      "train_accuracy_percent": 88.60666666666667,
+      "train_loss": 0.8652101697206497,
+      "train_samples": 60000
+    },
+    {
+      "epoch": 2,
+      "test_accuracy_percent": 97.02,
+      "test_correct": 9702,
+      "test_samples": 10000,
+      "train_accuracy_percent": 96.54333333333334,
+      "train_loss": 0.14265120151042937,
+      "train_samples": 60000
+    }
+  ],
+  "init_blob": "/home/ubuntu/workspace/FPGA/level1/data/lenet_accuracy_1.bin",
+  "init_blob_sha256": "72982df94c34bc968ff37f8b4c68d0df9e4434545c00d7128600dd8c6931c340",
+  "lr": 0.0001,
+  "metrics": [
+    {
+      "accuracy_percent": 98.37,
+      "correct": 9837,
+      "model": "float",
+      "sample_count": 10000
+    },
+    {
+      "accuracy_percent": 56.93,
+      "correct": 5693,
+      "logit_mae_vs_float": 4.350475119375498,
+      "logit_max_abs_error_vs_float": 22.321468353271484,
+      "logit_mse_vs_float": 31.903655710847378,
+      "logit_rmse_vs_float": 5.648332117612011,
+      "model": "ptq",
+      "prediction_match_float_percent": 57.17,
+      "prediction_matches_float": 5717,
+      "sample_count": 10000
+    },
+    {
+      "accuracy_percent": 97.02,
+      "correct": 9702,
+      "logit_mae_vs_float": 2.7559577023757433,
+      "logit_max_abs_error_vs_float": 14.254196286201477,
+      "logit_mse_vs_float": 10.729553889428544,
+      "logit_rmse_vs_float": 3.2755997755263913,
+      "model": "qat",
+      "prediction_match_float_percent": 97.78,
+      "prediction_matches_float": 9778,
+      "sample_count": 10000
+    }
+  ],
+  "mnist_raw_dir": "/home/ubuntu/Documents/case1_mlp/data/MNIST/raw",
+  "qat_quantized_state": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat/qat_quantized_state.pt",
+  "qat_state": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat/qat_state.pt",
+  "quantize_activations": true,
+  "quantize_bias": false,
+  "seed": 20260914,
+  "test_samples": 10000,
+  "train_samples": 60000,
+  "weight_decay": 0.0,
+  "weight_quantization_error": [
+    {
+      "bits": 8,
+      "count": 44190,
+      "fraction_bits": 2,
+      "integer_bits": 6,
+      "max_abs_error_to_latent": 0.12499330937862396,
+      "mse_to_latent": 0.003304826907467741,
+      "saturation_count": 0,
+      "stage": "ptq",
+      "step": 0.25,
+      "tensor": "ALL"
+    },
+    {
+      "bits": 8,
+      "count": 44190,
+      "fraction_bits": 2,
+      "integer_bits": 6,
+      "max_abs_error_to_latent": 0.12499985843896866,
+      "mse_to_latent": 0.0035677913771424027,
+      "saturation_count": 0,
+      "stage": "qat",
+      "step": 0.25,
+      "tensor": "ALL"
+    }
+  ],
+  "weight_spec": {
+    "bits": 8,
+    "fraction_bits": 2,
+    "integer_bits": 6,
+    "maximum": 31.75,
+    "minimum": -32.0,
+    "signed": true,
+    "step": 0.25
+  }
+}

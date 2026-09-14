@@ -1,0 +1,18 @@
+{
+  "accuracy_passed": true,
+  "accuracy_threshold_percent": 90.0,
+  "batch_complete": true,
+  "csim_complete": true,
+  "data_width": 8,
+  "hls": {
+    "accuracy_percent": 96.98,
+    "correct": 9698,
+    "log_accuracy_percent": 96.98,
+    "sample_count": 10000
+  },
+  "hls_return_code": 0,
+  "hls_workspace": "/home/ubuntu/workspace/FPGA/bonus/hls_work/w8a8_i6_qat_csim",
+  "input_blob": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/qat_hls_input.bin",
+  "predictions_csv": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/hls_predictions.csv",
+  "run_log": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/run.log"
+}

@@ -1,0 +1,19 @@
+{
+  "data_spec": {
+    "bits": 8,
+    "fraction_bits": 2,
+    "integer_bits": 6,
+    "maximum": 31.75,
+    "minimum": -32.0,
+    "signed": true,
+    "step": 0.25
+  },
+  "mnist_raw_dir": "/home/ubuntu/Documents/case1_mlp/data/MNIST/raw",
+  "output_path": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat_hls/qat_hls_input.bin",
+  "output_sha256": "0c39e727db82816cad5a2ec61b071820abda29636bec5d359c6b0dc86aeaae1e",
+  "protocol_magic": -20260902,
+  "quantize_before_write": true,
+  "sample_count": 10000,
+  "state_path": "/home/ubuntu/workspace/FPGA/bonus/results/w8a8_i6_qat/qat_quantized_state.pt",
+  "state_sha256": "4481d98829fbf6b1caecf4898f6361a8c7a8c5bc4515e56fa0e375376829bea8"
+}
